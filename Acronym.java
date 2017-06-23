@@ -1,6 +1,21 @@
 public class Acronym {
+    public String sentence;
+    private String tla;
 
-// Split a sentence into an array of words
+    public Acronym(String sentence)
+    {
+        String[] wordArray;
+        wordArray =  splitWords(sentence);
+        tla = firstLetters(wordArray);
+  //      return tla;
+
+    }
+
+    public String get(){
+        return tla;
+    }
+
+    // Split a sentence into an array of words
    public static String[] splitWords(String sentence) {
 	System.out.println("Splitting " + sentence);
 	return sentence.split(" ");
@@ -25,7 +40,9 @@ public class Acronym {
 	}
 
 
-   public static void main(String[] args) {
+
+
+	public static void main(String[] args) {
 
 	int index;
 	String[] wordArray;
@@ -34,14 +51,12 @@ public class Acronym {
 	for (index = 0; index < args.length; ++index)
 	{
 		System.out.println("args[" + index + "]: " + args[index]);
-		
+
 		wordArray =  splitWords(args[0]);
 		tla = firstLetters(wordArray);
-		System.out.println("Result " + tla);
-		
 	}
-	
-
-
+	System.out.println("--------- Part 2 ------------");
+	tla = new Acronym("This is the end of the world").get();
+    System.out.println(tla);
    }
 }
