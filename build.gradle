@@ -15,3 +15,25 @@ test {
     events = ["passed", "failed", "skipped"]
   }
 }
+
+
+task compile {
+    doLast {
+        println 'compiling source'
+//		javac Acronym.java
+    }
+}
+
+task compileTest(dependsOn: compile) {
+    doLast {
+        println 'compiling unit tests'
+    }
+}
+
+task testBuild(dependsOn: [compile, compileTest]) {
+    doLast {
+        println 'running unit tests'
+    }
+}
+
+
