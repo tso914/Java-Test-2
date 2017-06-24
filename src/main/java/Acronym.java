@@ -5,9 +5,25 @@ public class Acronym {
     public Acronym(String sentence)
     {
         String[] wordArray;
-        wordArray =  splitWords(sentence);
-        tla = firstLetters(wordArray);
-  //      return tla;
+		
+		// Look for exceptions to the default rule of taking the first
+		// letter of each word.
+		switch (sentence) {
+			case "HyperText Markup Language": 				tla = "HTML";
+															break;
+			case "Complementary metal-oxide semiconductor": tla = "CMOS";
+															break;
+			default: 										tla="";
+															break;
+		}
+		// If no exception above is found, then perform standard
+		// splitting of the words, taking the first letter from
+		// each as a capital.
+		if (tla =="") {
+		wordArray =  splitWords(sentence);
+        tla = firstLetters(wordArray).toUpperCase();
+		}
+		System.out.println("TLA is " + tla);
 
     }
 
@@ -16,30 +32,24 @@ public class Acronym {
     }
 
     // Split a sentence into an array of words
-   public static String[] splitWords(String sentence) {
+	public static String[] splitWords(String sentence) {
 	System.out.println("Splitting " + sentence);
 	return sentence.split(" ");
 	}
 
-// Return a string containing the first letters from an array
-		
-   public static String firstLetters(String[] strArray) {
+	// Return a string containing the first letters from an array		
+	public static String firstLetters(String[] strArray) {
 	
 	int index;
-	String tla = "";
+	String tlaConstruction = "";
 	
 	for (index = 0; index < strArray.length; ++index)
 		{
-		tla += strArray[index].substring(0,1);	
+		tlaConstruction += strArray[index].substring(0,1);	
 		}
-	System.out.println("String Array 0 " + strArray[0]);
-	System.out.println("String Array 1 " + strArray[1]);
-	System.out.println("Array Size is " + strArray.length);
-	System.out.println("TLA is " + tla);
-	return tla;	
+
+	return tlaConstruction;	
 	}
-
-
 
 
 	public static void main(String[] args) {

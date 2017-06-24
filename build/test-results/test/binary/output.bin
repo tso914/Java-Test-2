@@ -1,5 +1,14 @@
 %Splitting Portable Network Graphics
-String Array 0 Portable
-String Array 1 Network
-Array Size is 3
 TLA is PNG
+TLA is CMOS
+'Splitting PHP: Hypertext Preprocessor
+TLA is PHP
+*Splitting GNU Image Manipulation Program
+TLA is GIMP
+Splitting Ruby on Rails
+TLA is ROR
+Splitting Cat in a Hat
+TLA is CIAH
+TLA is HTML
+	Splitting First In, First Out
+	TLA is FIFO

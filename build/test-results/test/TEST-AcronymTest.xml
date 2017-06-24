@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AcronymTest" tests="8" skipped="7" failures="0" errors="0" timestamp="2017-06-24T07:54:32" hostname="LUK-PC0GCDPP" time="0.0">
+<testsuite name="AcronymTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-06-24T08:30:57" hostname="LUK-PC0GCDPP" time="0.0">
   <properties/>
   <testcase name="fromTitleCasedPhrases" classname="AcronymTest" time="0.0"/>
-  <testcase name="fromPhrasesWithPunctuationAndSentenceCasing" classname="AcronymTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="fromOtherPhrasesWithPunctuation" classname="AcronymTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="fromPhrasesWithNonAcronymAllCapsWord" classname="AcronymTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="fromOtherTitleCasedPhrases" classname="AcronymTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="fromPhraseWithSingleLetterWord" classname="AcronymTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="fromInconsistentlyCasedPhrases" classname="AcronymTest" time="0.0">
-    <skipped/>
-  </testcase>
-  <testcase name="fromPhrasesWithPunctuation" classname="AcronymTest" time="0.0">
-    <skipped/>
-  </testcase>
+  <testcase name="fromPhrasesWithPunctuationAndSentenceCasing" classname="AcronymTest" time="0.0"/>
+  <testcase name="fromOtherPhrasesWithPunctuation" classname="AcronymTest" time="0.0"/>
+  <testcase name="fromPhrasesWithNonAcronymAllCapsWord" classname="AcronymTest" time="0.0"/>
+  <testcase name="fromOtherTitleCasedPhrases" classname="AcronymTest" time="0.0"/>
+  <testcase name="fromPhraseWithSingleLetterWord" classname="AcronymTest" time="0.0"/>
+  <testcase name="fromInconsistentlyCasedPhrases" classname="AcronymTest" time="0.0"/>
+  <testcase name="fromPhrasesWithPunctuation" classname="AcronymTest" time="0.0"/>
   <system-out><![CDATA[Splitting Portable Network Graphics
-String Array 0 Portable
-String Array 1 Network
-Array Size is 3
 TLA is PNG
+TLA is CMOS
+Splitting PHP: Hypertext Preprocessor
+TLA is PHP
+Splitting GNU Image Manipulation Program
+TLA is GIMP
+Splitting Ruby on Rails
+TLA is ROR
+Splitting Cat in a Hat
+TLA is CIAH
+TLA is HTML
+Splitting First In, First Out
+TLA is FIFO
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
